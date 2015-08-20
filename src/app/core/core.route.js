@@ -6,6 +6,6 @@
   CoreRoute.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function CoreRoute($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/todo');
   }
 })();
