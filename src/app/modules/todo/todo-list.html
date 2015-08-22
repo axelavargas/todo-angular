@@ -1,0 +1,11 @@
+<h1>My Todos</h1>
+
+<ul ng-repeat="todo in vm.todoList">
+  <li>
+    {{ todo.title }}
+    <a ui-sref="todolist.view({ todoId: todo.id })">view</a>
+    <a ui-sref="todolist.edit({ todoId: todo.id })">edit</a>
+  </li>
+</ul>
+
+<div ui-view></div>

@@ -16,7 +16,7 @@ module.exports = function (config) {
       gulpConfig.path.build + gulpConfig.html.bundle,
       gulpConfig.path.app + gulpConfig.test.specs
     ],
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['mocha', 'chai', 'sinon'],
     logLevel: config.LOG_INFO,
     port: 9876,
     preprocessors: {},

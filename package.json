@@ -26,6 +26,7 @@
     "browser-sync": "^2.8.2",
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
+    "sinon": "^1.16.1",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-angular-filesort": "^1.1.1",
@@ -53,6 +54,7 @@
     "karma-chai": "^0.1.0",
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.0",
+    "karma-sinon": "^1.0.4",
     "main-bower-files": "^2.9.0",
     "mocha": "^2.2.5",
     "phantomjs": "^1.9.17",
@@ -75,6 +77,6 @@
     "pretest-e2e": "npm run build-test;npm run start-test;npm run update-webdriver",
     "pretest-unit": "npm run build-test",
     "test-e2e": "protractor protractor.conf.js",
-    "test-unit": "karma start karma.conf.js --single-run"
+    "test-unit": "karma start karma.conf.js --single-run "
   }
 }

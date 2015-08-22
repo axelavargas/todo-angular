@@ -6,11 +6,27 @@
   TodoRoute.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function TodoRoute($stateProvider, $urlRouteProvider) {
-    $stateProvider.state('todo', {
-      controller: 'Todo',
+    $stateProvider
+
+    .state('todolist', {
+      controller: 'TodoList',
       controllerAs: 'vm',
-      templateUrl: 'app/modules/todo/todo.html',
-      url: '/todo',
+      templateUrl: 'app/modules/todo/todo-list.html',
+      url: '/',
+    })
+
+    .state('todolist.view', {
+      controller: 'TodoView',
+      controllerAs: 'vm',
+      templateUrl: 'app/modules/todo/todo-view.html',
+      url: 'todo-id:todoId/view'
+    })
+
+    .state('todolist.edit', {
+      controller: 'TodoEdit',
+      controllerAs: 'vm',
+      templateUrl: 'app/modules/todo/todo-edit.html',
+      url: 'todo-id:todoId/edit'
     });
   }
 })();
