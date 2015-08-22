@@ -8,6 +8,7 @@
   "css": {
     "bundle": "app.min.css",
     "files": [
+      "assets/vendor/bootstrap/dist/css/bootstrap.css",
       "assets/stylesheets/app.css"
     ]
   },
