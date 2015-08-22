@@ -20,13 +20,14 @@
   }
 
   angular.module('app.todo').controller('TodoEdit', TodoEdit);
-  TodoEdit.$inject = ['$stateParams','TodoModel'];
-  function TodoEdit ($stateParams, TodoModel) {
+  TodoEdit.$inject = ['$state','$stateParams','TodoModel'];
+  function TodoEdit ($state, $stateParams, TodoModel) {
     var vm = this;
     vm.todo = TodoModel.getById(parseInt($stateParams.todoId,10));
 
     vm.edit = function () {
       TodoModel.edit(parseInt($stateParams.todoId, 10), vm.todo);
+      $state.go('^');
     };
   }
 })();
