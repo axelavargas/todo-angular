@@ -24,8 +24,8 @@ $ npm run build-dev   # Builds for development
 Serve the application using Browsersync: *(for development purposes)*
 
 ```
-$ npm run-start       # Serves the production build
-$ npm run-start-dev   # Serves the development build
+$ npm run start       # Serves the production build
+$ npm run start-dev   # Serves the development build
 ```
 
 Run unit tests using Karma:
