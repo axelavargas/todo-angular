@@ -50,7 +50,6 @@ describe('TodoModule', function () {
         $stateParams: {todoId: 1},
         TodoModel: TodoModel
       });
-
       var spy = sinon.spy(TodoModel, 'edit');
       todoEditCtrl.edit();
       expect(spy.calledWith(1, todoEditCtrl.todo)).to.be.true;
@@ -62,7 +61,6 @@ describe('TodoModule', function () {
     it('check if TodoModel.getById is called', inject(
       function ($controller, TodoModel) {
       var spy = sinon.spy(TodoModel, 'getById');
-
       var todoViewCtrl = $controller('TodoView', {
         $stateParams: 1,
         TodoModel: TodoModel
@@ -75,7 +73,6 @@ describe('TodoModule', function () {
     it('check if TodoModel.getAll is called', inject(
       function ($controller, TodoModel) {
       var spy = sinon.spy(TodoModel, 'getAll');
-
       var todoViewCtrl = $controller('TodoList', {
         TodoModel: TodoModel
       });
